@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+//use Symfony\Component\Routing\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,16 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+// Route::prefix('auth')->group(function(){
+//     Route::post('register', 'AuthenticateController@register');
+//     Route::post('login', 'AuthenticateController@login');
+    
+//     //Protected area. Just logged guy can loggedout!
+//     Route::middleware('auth:api')->group(function(){
+//         Route::post('logout', 'AuthenticateController@logout');
+//     });
+// });
+
+// Route::get('products', 'ProductController@index')->middleware('auth:api');
