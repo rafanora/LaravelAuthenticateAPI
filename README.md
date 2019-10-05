@@ -34,8 +34,8 @@ Accept: application/json
 Host: localhost:8000  
 Content-Length: 62  
 {  
-  "email": "rafael2@rafael.com",  
-  "password": "123abc"  
+  "email": "youremail@youremail.com",  
+  "password": "yourpassword"  
 }  
   
 *LOGOUT  
