@@ -21,8 +21,8 @@ Content-Length: 122
   
 {  
   "name": "Rafael2",  
-  "email": "rafael2@rafael.com",  
-  "password": "123abc",  
+  "email": "youremail@youremail.com",  
+  "password": "yourpassword"  
   "password_confirmation": "123abc"  
 }  
   
