@@ -1,29 +1,29 @@
 # LaravelAuthenticateAPI
 
-Project authentication by API<br/>
-#Factory, Migrate, MySQL, middleware. 
+Project authentication by API  
+#Factory, Migrate, MySQL, middleware. <br/>
 
 
-**Don't forget to run  
-composer require laravel/passport (Config databese in the file .env and run migrate to create the tables.)
-php artisan passport:install
-php artisan key:generate
+**Don't forget to run  <br/>
+composer require laravel/passport (Config databese in the file .env and run migrate to create the tables.)<br/>
+php artisan passport:install<br/>
+php artisan key:generate<br/>
 
 
-**To test you can unse this:
-*REGISTER USER
-POST http://localhost:8000/api/auth/register HTTP/1.1
-User-Agent: Fiddler
-Content-Type: application/json
-Accept: application/json
-Host: localhost:8000
-Content-Length: 122
-
-{
-  "name": "Rafael2",
-  "email": "rafael2@rafael.com",
-  "password": "123abc",
-  "password_confirmation": "123abc"
+**To test you can unse this:<br/>
+*REGISTER USER<br/>
+POST http://localhost:8000/api/auth/register HTTP/1.1<br/>
+User-Agent: Fiddler<br/>
+Content-Type: application/json<br/>
+Accept: application/json<br/>
+Host: localhost:8000<br/>
+Content-Length: 122<br/>
+<br/>
+{<br/>
+  "name": "Rafael2",<br/>
+  "email": "rafael2@rafael.com",<br/>
+  "password": "123abc",<br/>
+  "password_confirmation": "123abc"<br/>
 }
 
 *LOGIN
