@@ -19,14 +19,14 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
-// Route::prefix('auth')->group(function(){
-//     Route::post('register', 'AuthenticateController@register');
-//     Route::post('login', 'AuthenticateController@login');
+Route::prefix('auth')->group(function(){
+    Route::post('register', 'AuthenticateController@register');
+    Route::post('login', 'AuthenticateController@login');
     
-//     //Protected area. Just logged guy can loggedout!
-//     Route::middleware('auth:api')->group(function(){
-//         Route::post('logout', 'AuthenticateController@logout');
-//     });
-// });
+    //Protected area. Just logged guy can loggedout!
+    Route::middleware('auth:api')->group(function(){
+        Route::post('logout', 'AuthenticateController@logout');
+    });
+});
 
-// Route::get('products', 'ProductController@index')->middleware('auth:api');
+Route::get('products', 'ProductController@index')->middleware('auth:api');

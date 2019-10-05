@@ -36,7 +36,7 @@ class AuthenticateController extends Controller
 
         $credentials = [
             'email'=> $request->email,
-            'password'=> $request->password,
+            'password'=> $request->password
         ];
 
         if (!Auth::attempt($credentials)) {
@@ -46,7 +46,8 @@ class AuthenticateController extends Controller
         }
 
         $user = $request->user();
-        $token = $user->createToken('Access Token')->accessToken();
+        $token = $user->createToken('Access Token')->accessToken;
+        
         
         return response()->json([
             'token' => $token
